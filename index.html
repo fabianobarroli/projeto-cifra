@@ -4,9 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Codex César64</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <div class="cabecalho">
+            <h1>Codex César64</h1>
+        </div>
+    </header>
+    <main>
+        <form action="">
+            <legend>Digite a Mensagem a ser codificada!</legend>
+            <label for="digitemensagem">Mensagem</label>
+            <textarea name="mensagem" id="mensagem" cols="100" rows="30"></textarea>
+            <fieldset class="radios">
+                <legend>Qual ação deseja</legend>
+                <label for="radio-codificar"><input type="radio" name="escolha" id="radio-codificar">Codificar</label>
+                <label for="radio-decodificar"><input type="radio" name="escolha" id="radio-decodificar">Decodificar</label>
+            </fieldset>
+            <fieldset class="select">
+            <legend>Escolha o tipo de codificação</legend>
+            <select name="" id="">
+                <option>Cifra de César</option>
+                <option>Base64</option>
+            </select>
+            </fieldset>
+        </form>
+        <input type="submit" class="cod-decod">
+    </main>
+    <footer>
+        <h5 class="creditos">Projeto 1 - Módulo 2 - Desenvolvido por Fabiano B. Oliveira 2021</h5>
+    </footer>
 </body>
 </html>
