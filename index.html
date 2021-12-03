@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codex César64</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rufina&family=Special+Elite&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -14,24 +17,25 @@
         </div>
     </header>
     <main>
-        <form action="">
-            <legend>Digite a Mensagem a ser codificada!</legend>
-            <label for="digitemensagem">Mensagem</label>
-            <textarea name="mensagem" id="mensagem" cols="100" rows="30"></textarea>
+        <form class="caixa-central">
+            <legend class="legenda">Digite a Mensagem a ser codificada!</legend>
+            <textarea name="mensagem" id="mensagem" cols="80" rows="17"></textarea>
             <fieldset class="radios">
-                <legend>Qual ação deseja</legend>
+                <legend class="legenda">Qual ação deseja</legend>
                 <label for="radio-codificar"><input type="radio" name="escolha" id="radio-codificar">Codificar</label>
                 <label for="radio-decodificar"><input type="radio" name="escolha" id="radio-decodificar">Decodificar</label>
             </fieldset>
             <fieldset class="select">
-            <legend>Escolha o tipo de codificação</legend>
-            <select name="" id="">
-                <option>Cifra de César</option>
-                <option>Base64</option>
-            </select>
+                <legend class="legenda">Escolha o tipo de codificação</legend>
+                <select class="select">
+                    <option>Cifra de César</option>
+                    <option>Base64</option>
+                </select>
             </fieldset>
+            <input type="submit" class="cod-decod">
         </form>
-        <input type="submit" class="cod-decod">
+
+        
     </main>
     <footer>
         <h5 class="creditos">Projeto 1 - Módulo 2 - Desenvolvido por Fabiano B. Oliveira 2021</h5>
