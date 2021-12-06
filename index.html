@@ -7,8 +7,9 @@
     <title>Codex César64</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rufina&family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rufina&family=Special+Elite&display=swap" rel="stylesheet">
+    <script src="./script.js" type="text/javascript" defer></script>
 </head>
 <body>
     <header>
@@ -22,17 +23,18 @@
             <textarea name="mensagem" id="mensagem" cols="80" rows="17"></textarea>
             <fieldset class="radios">
                 <legend class="legenda">Qual ação deseja</legend>
-                <label for="radio-codificar"><input type="radio" name="escolha" id="radio-codificar">Codificar</label>
-                <label for="radio-decodificar"><input type="radio" name="escolha" id="radio-decodificar">Decodificar</label>
+                <label for="radio-codificar"><input type="radio" name="escolha" id="radio-codificar" onclick="codificar()">Codificar</label>
+                <label for="radio-decodificar"><input type="radio" name="escolha" id="radio-decodificar" onclick="decodificar()">Decodificar</label>
             </fieldset>
             <fieldset class="select">
                 <legend class="legenda">Escolha o tipo de codificação</legend>
                 <select class="select">
-                    <option>Cifra de César</option>
-                    <option>Base64</option>
+                    <option id="cifra-cesar" onclick="cesar()">Cifra de César</option>
+                    <option onclick="base()">Base64</option>
                 </select>
+                
             </fieldset>
-            <input type="submit" class="cod-decod">
+            <input type="submit" class="cod-decod" onclick="botao()">
         </form>
 
         
