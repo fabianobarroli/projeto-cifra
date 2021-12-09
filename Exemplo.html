@@ -1,0 +1,48 @@
+ <body>
+       <span id="label">passos: </span> 
+		
+        <button onclick="voltar()">-</button>
+		
+        <span id="passos">1</span>
+		
+        <button onclick="avancar()">+</button><br/><br/>
+		
+        <input type="text" id="entradaDeTexto"/>
+        <button onclick="calcular()" id="big">Calcular</button>
+        <span id="saida"></span>
+        <script>
+            var alfabeto = new Array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z");
+			
+            var passos = +document.getElementById("passos").innerHTML;
+
+            function voltar() {
+                if(passos > 1) {
+                    passos--;
+                    document.getElementById("passos").innerHTML = passos;
+                }
+            }
+
+            function avancar() {
+                if(passos < 25) {
+                    passos++;
+                    document.getElementById("passos").innerHTML = passos;
+                }
+            }
+
+            function calcular() {
+                var input = document.getElementById("entradaDeTexto").value.toUpperCase();
+                var resultado = "";
+
+                for(var i = 0; i<input.length; i++){ //Passa por cada caracter do input
+
+                    var posicao = input.charCodeAt(i)-64; //Identifica qual letra é do alfabeto
+                    var deslocamento = (posicao - passos) % 26; //Faz o deslocamento de César e mantém dentro do alfabeto (26 letras)
+                    deslocamento = deslocamento == 0 ? 26 : deslocamento; //MOD retornar 0 caso o resultadoado seja 26, tem que tratar isso
+                    resultado += alfabeto[deslocamento-1]; //Faz -1 porque a letra 1 (A) está no índice 0 do teu array.
+                }
+
+                document.getElementById("saida").innerHTML = resultado;
+            }
+        </script>
+    </body>
+</html>

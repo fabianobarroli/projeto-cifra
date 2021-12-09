@@ -89,6 +89,9 @@ legend, label, textarea, fieldset, select{
     background-color: crimson;
     transform: scale(1.2);
 }
+#divCesar{
+    display: none;
+}
 
 .creditos{
     position: absolute;
