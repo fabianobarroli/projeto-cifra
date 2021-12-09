@@ -8,6 +8,8 @@ var inputCesar = document.querySelector('.inputCesar')
 selecao.addEventListener('change', function(){
     if(selecao.value == "cifraCesar"){
         telaCesar.style.display = "block"
+    } else {
+        telaCesar.style.display = "none"
     }
 })
 
