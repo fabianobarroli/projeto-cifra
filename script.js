@@ -54,6 +54,7 @@ function cifraCod(arr, key){
     }).join('')
 }
 
+
 function decodifica(texto, chave){ 
     return texto.map((str)=>{ 
     var cripto = str.charCodeAt();
