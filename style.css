@@ -14,7 +14,7 @@ body{
     text-align: center;
     margin: 20px;
     font-size: 30px;
-
+    padding:20px;
 }
 
 main{
@@ -27,13 +27,13 @@ textarea{
 
 textarea:hover{
     background-color: rgb(136, 209, 209);
-    transform: scale(1.2);
+    transform: scale(1.02);
 }
 
 .caixa-central{
     display: inline-block;
-    margin: 40px 0;
-    padding: 20px 20px;
+    margin-top: 50px;
+    padding: 30px 20px;
     position:absolute;
     top:50%;
     left: 50%;
@@ -46,20 +46,21 @@ legend, label, textarea, fieldset, select{
 
 .legenda{
     font-weight:bold;
-    font-size: 30px;
+    font-size: 20px;
     padding: 10px;
 
 }
 
-
 .radios, .select{
     border: none;
+    text-align: center;
+    margin-top: 20px;
 }
 .radios:hover{
-    transform: scale(1.2);
+    transform: scale(1.02);
 }
-.select{
-    padding: 10px 10px;
+.selecao{
+    padding: 10px;
     margin-top: 10px;
     margin-left: 10px;
     align-items: center;
@@ -68,38 +69,39 @@ legend, label, textarea, fieldset, select{
 }
 
 .select:hover{
-    transform: scale(1.2);
+    transform: scale(1.02);
 }
 
 .cod-decod{
     display: block;
-    margin: 0 0 20px;
-    padding: 10px 25px;
-    width: 50%;
+    margin-top:40px;
+    padding: 10px;
+    width: 40%;
     border-radius: 20px;
     background-color:rgb(2, 138, 138);
     font-weight: bold;
     align-items: center;
-    margin: 40px 0;
-    padding: 20px 20px;
+    padding: 20px;
    
 }
 
 .cod-decod:hover{
     background-color: crimson;
-    transform: scale(1.2);
+    transform: scale(1.02);
 }
 #divCesar{
     display: none;
+    margin-top: 20px;
+}
+
+.textoRetorno{
+    margin-top: 20px;
 }
 
 .creditos{
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 50px;
-    align-items: center;
-    font-size: 15px;
-}
+    position:absolute;
+    bottom: 10px;
+    padding: 5px;
+    text-align: center;
+    font-size: 10px;
+} 
